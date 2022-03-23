@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>bootstrap-项目</title>
+	<link rel="stylesheet" type="text/css" href="C:/learning documents/框架\bootstrap-3.4.1-dist/css/bootstrap.css" />
+</head>
+<style>
+	.principal {
+				background-color: antiquewhite;
+				height: 50rem;
+			}
+
+			.d1 {
+				background-color: #000000;
+				height: 10rem;
+				
+			}
+
+			.d2 {
+				background-color: darkcyan;
+				height: 10rem;
+				
+			}
+
+			.d3 {
+				background-color: blueviolet;
+				height: 10rem;
+				
+			}
+
+			.d4 {
+				background-color: deepskyblue;
+				height: 10rem;
+				
+			}
+</style>
+
+<body>
+	<!-- 头部导航栏 -->
+	<nav class="navbar navbar-default" style="background-color: transparent;position: fixed;right: 0px;left: 0px;top: 0px;z-index: 1030;border: none;">
+		<div class="container-fluid">
+			<!-- 品牌和开关组合在一起，实现更好的移动显示 -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="./bootstrap-2/logo.png"></a>
+			</div>
+
+			<!-- 收集导航链接、表单和其他用于切换的内容 -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">博客</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">关于<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">项目1</a></li>
+							<li><a href="#">项目2</a></li>
+							<li><a href="#">项目3</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">web前端</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">learning more ...</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="搜索">
+					</div>
+					<button type="submit" class="btn btn-default"><svg t="1647942873250" class="icon"
+							viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3213"
+							width="22" height="17">
+							<path
+								d="M945.066667 898.133333l-189.866667-189.866666c55.466667-64 87.466667-149.333333 87.466667-241.066667 0-204.8-168.533333-373.333333-373.333334-373.333333S96 264.533333 96 469.333333 264.533333 842.666667 469.333333 842.666667c91.733333 0 174.933333-34.133333 241.066667-87.466667l189.866667 189.866667c6.4 6.4 14.933333 8.533333 23.466666 8.533333s17.066667-2.133333 23.466667-8.533333c8.533333-12.8 8.533333-34.133333-2.133333-46.933334zM469.333333 778.666667C298.666667 778.666667 160 640 160 469.333333S298.666667 160 469.333333 160 778.666667 298.666667 778.666667 469.333333 640 778.666667 469.333333 778.666667z"
+								p-id="3214"></path>
+						</svg></button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">菜单<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">项目1</a></li>
+							<li><a href="#">项目2</a></li>
+							<li><a href="#">项目3</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">learning more ...</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!-- 轮播图 -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="height: 40rem;">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox"style="height: 100%;">
+			<div class="item active"style="height: 100%;">
+				<img src="./bootstrap-2/banner_1.jpg" alt="图片无法显示时代替的文本"style="height: 100%;">
+				<div class="carousel-caption">
+					图片1
+				</div>
+			</div>
+			<div class="item"style="height: 100%;">
+				<img src="./bootstrap-2/banner_2.jpg" alt="图片无法显示时代替的文本"style="height: 100%;">
+				<div class="carousel-caption">
+					图片2
+				</div>
+			</div>
+			<div class="item"style="height: 100%;">
+				<img src="./bootstrap-2/banner_3.jpg" alt="图片无法显示时代替的文本"style="height: 100%;">
+				<div class="carousel-caption">
+					图片3
+				</div>
+			</div>
+			<div class="item"style="height: 100%;">
+				<img src="./bootstrap-2/banner_4.jpg" alt="图片无法显示时代替的文本"style="height: 100%;">
+				<div class="carousel-caption">
+					图片4
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- 主体内容 -->
+	<div">
+		<div style="font-size: 4rem;color: black;width: 100%;height: 5rem;line-height: 100%;text-align: center;margin: 2rem 0rem 2rem 0rem;">web 前端项目</div>
+		<div>
+			<div class="container principal">
+				<div class="col-lg-3 col-md-6 col-sm-12 d1">
+					1
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 d2">
+					2
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 d3">
+					3
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 d4">
+					4
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./jQuery.js"></script>
+<script src="./bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
